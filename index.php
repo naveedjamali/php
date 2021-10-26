@@ -6,25 +6,15 @@
         </title>
     </head>
 <body>
+<?php 
 
-<?php
-$x = 5; // global scope
-
-function myTest() {
-  // using x inside this function will generate an error
-  static $b = 0;
-  echo "<p>Variable x inside function is: $b</p>";
-
-  $b = $b + 5;
-}
-myTest();
-myTest();
-myTest();
-myTest();
+echo "<H1>Echo Single Argument output </H1>";
+echo "<p>echo prints single or multiple arguments!</p>";
+echo ("Also, echo can also use parenthesis as a function.</Br>");
+echo "Single ", "<B>OR</B> ", " Multiple", " arguments does not affect performance";
 
 
-echo "<p>Variable x outside function is: $x</p>";
-?>  
+?>
 
 </body>
 </html>
