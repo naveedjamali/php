@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
 <?php
-echo strlen."My first PHP script!";
+$txt = "PHP";
+echo "I love $txt!";
 ?>
 
 </body>
