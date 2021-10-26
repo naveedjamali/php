@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>
+            PHP - Advance Practice
+        </title>
+    </head>
 <body>
+
 <?php
-$txt = "PHP";
-echo "I love $txt!";
+ECHO "Hello World!<br>";
+echo "Hello World!<br>";
+EcHo "Hello World!<br>";
 ?>
 
 </body>
