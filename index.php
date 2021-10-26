@@ -7,38 +7,35 @@
     </head>
 <body>
 <?php
+class Car{
+    public $color;
+    public $model;
 
-function br(){
-    echo "<br>";
+    public function __construct($Color, $Model){
+        $this->color = $Color;
+        $this->model = $Model;
+    }
+    public function message(){
+        return "My car is a ".$this->color." ".$this->model."</BR>";
+    }
+
 }
-print "<h2>PHP is Fun!</h2>";
-print "Hello world!<br>";
+$car;
+$myCar = new Car("Red","Volvo");
 
-br();
+echo $myCar->message();
 
-br();
+$car2 = new Car("Yellow","BMW");
+echo strlen($car2->message());
+echo "</Br>";
+echo str_word_count($car2->message());
 
-br();
-print "I'm about to learn PHP!";
+echo "</Br>";
+$car2 = NULL;
 
-
-$x = 2021;
-$y = "Year";
-
-br();
-echo $x;
-br();
-echo $y;
-br();
-echo var_dump($x);
-br();
-echo var_dump($y);
-
-$z = 21.215487;
-br();
-echo $z;
-br();
-echo var_dump($z);
+echo var_dump($car2)."</Br>";
+echo var_dump($car2)."</Br>";
+echo $car2->message();
 ?>
 
 </body>
