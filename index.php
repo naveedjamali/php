@@ -12,10 +12,16 @@ $x = 5; // global scope
 
 function myTest() {
   // using x inside this function will generate an error
-  global $x;
-  echo "<p>Variable x inside function is: $x</p>";
+  static $b = 0;
+  echo "<p>Variable x inside function is: $b</p>";
+
+  $b = $b + 5;
 }
 myTest();
+myTest();
+myTest();
+myTest();
+
 
 echo "<p>Variable x outside function is: $x</p>";
 ?>  
