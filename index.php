@@ -8,13 +8,17 @@
 <body>
 
 <?php
-ECHO "Hello World!<br>";
-echo "Hello World!<br>";
-#print "<H1>Hello World! from print</H1><br>";
-$x = 6 + 10 +/* 12 +*/ 12;
+$x = 5; // global scope
 
-print $x;
-?>
+function myTest() {
+  // using x inside this function will generate an error
+  global $x;
+  echo "<p>Variable x inside function is: $x</p>";
+}
+myTest();
+
+echo "<p>Variable x outside function is: $x</p>";
+?>  
 
 </body>
 </html>
