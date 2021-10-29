@@ -13,6 +13,12 @@ function br(){
     echo "</Br>";
 }
 
+function show($content){
+    br();
+    echo $content;
+    
+}
+
 class Car{
     public $color;
     public $model;
@@ -44,6 +50,19 @@ echo strrev($msg);
 br();
 echo strrev($hello);
 br();
+$word = 'naveed';
+$line = 'Hello naveed, how are you?';
+echo "position of $word in string '$line' is ".strpos($line, $word);
+br();
+echo str_replace($word, "Jamali", $line);
+// show (is_int(PHP_INT_MAX));
+// show(PHP_INT_MIN);
+// show(PHP_INT_SIZE);
+$d = var_dump(is_int($line));
+echo is_int($word);
+
+show($d==NULL);
+
 ?>
 
 </body>
